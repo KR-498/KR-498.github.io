@@ -2,6 +2,7 @@
 <html lang="pl">
 <head>
  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Moja Wizytówka</title>
  <link rel="stylesheet" href="style.css">
 </head>
@@ -9,7 +10,7 @@
  <header><h1>Moja Wizytówka - Portfolio</h1></header>
  
  <main>
-
+  <!-- Sekcja O mnie -->
   <section id="about-me">
    <h2>O mnie</h2>
    <img src="profilowe.jpg" alt="Moje zdjęcie profilowe">
@@ -22,7 +23,38 @@
    </ul>
   </section>
 
+  <!-- Nowa sekcja Projekty -->
+  <section id="projects">
+   <h2>Moje Projekty</h2>
+   <div class="projects-grid">
+    
+    <!-- Projekt 1 -->
+    <article class="project-card">
+     <h3>Sklep Internetowy</h3>
+     <p>Kompleksowy projekt szablonu e-commerce z responsywnym koszykiem zakupowym.</p>
+     <div class="project-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JS</span>
+     </div>
+     <a href="#" class="project-link">Zobacz projekt</a>
+    </article>
 
+    <!-- Projekt 2 -->
+    <article class="project-card">
+     <h3>Aplikacja Pogodowa</h3>
+     <p>Prosta aplikacja pobierająca dane o pogodzie w czasie rzeczywistym z zewnętrznego API.</p>
+     <div class="project-tags">
+      <span>JavaScript</span>
+      <span>REST API</span>
+     </div>
+     <a href="#" class="project-link">Zobacz projekt</a>
+    </article>
+
+   </div>
+  </section>
+
+  <!-- Dotychczasowa zawartość -->
   <section id="main-content">
    Moja wizytówka...
   </section>
