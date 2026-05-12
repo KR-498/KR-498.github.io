@@ -20,7 +20,7 @@ main {
     padding: 0 1rem;
 }
 
-/* Stylizacja nowej sekcji O mnie */
+/* Stylizacja sekcji O mnie */
 #about-me {
     background-color: #ffffff;
     padding: 2rem;
@@ -48,7 +48,7 @@ main {
     border: 3px solid #3498db;
 }
 
-/* Stylizacja listy umiejętności */
+/* Stylizacja listy umiejętności (Układ elastyczny dla komputerów) */
 #about-me ul {
     list-style-type: none;
     padding: 0;
@@ -74,4 +74,41 @@ main {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================== */
+/*   STYLE RESPONSYWNE (DLA TELEFONÓW)        */
+/* ========================================== */
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Zmniejszenie nagłówka na telefonie */
+    }
+
+    main {
+        margin: 1rem auto; /* Mniejszy odstęp sekcji od krawędzi ekranu */
+    }
+
+    #about-me, #main-content {
+        padding: 1.2rem; /* Mniejsze wewnętrzne odstępy w boksach */
+    }
+
+    #about-me img {
+        width: 120px; /* Nieco mniejsze zdjęcie profilowe */
+        height: 120px;
+    }
+
+    #about-me ul {
+        flex-direction: column; /* Układanie umiejętności jedna pod drugą */
+        gap: 0.8rem;
+        align-items: center;
+    }
+
+    #about-me li {
+        width: 80%; /* Szerokie kafelki umiejętności łatwiejsze do kliknięcia */
+        text-align: center;
+    }
 }
